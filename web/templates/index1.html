@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>JobSeeker</title>
+    <h1> Enter Job Keyword and the location</h1>
+</head>
+
+<body>
+
+<div>
+    <form method="post">
+        {% csrf_token %}
+        <label for="Keyword">Keyword Number:</label>
+        <input type="text" id="Keyword" name="Keyword"><br/>
+        <label for="location" >location Name :</label>
+        <input type="text" id="location" name="location"><br/>
+        <input type="checkbox" name="Linkedin" value="Linkedin" id="Linkedin"><label for="love"> Linkedin</label> 
+	<input type="checkbox" name="love" value="love" id="love"><label for="love"> Xing</label> 
+	<input type="checkbox" name="love" value="love" id="love"><label for="love"> Glassdoor</label> </form>
+
+        <button type="submit" value="submit">Submit</button>
+        </form>
+
+<textarea cols="100" name="text" rows="15">
+Add multiple lines of text here and watch the scrollbars grow...
+</textarea>
+</div>
